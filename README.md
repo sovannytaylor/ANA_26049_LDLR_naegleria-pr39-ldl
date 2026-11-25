@@ -1,4 +1,4 @@
-# ANA-XX_brief-description
+# ANA-26049_LDLR_naegleria-pr39-ldl
 
 *Advice for use*: This repository uses core scripts managed in a separate repository ([punctalyze](https://github.com/ocarmo/punctalyze)) to promote modularity and code reuse across projects in the Boeynaems lab. Each experiment uses a dedicated analysis repository containing a Git submodule that points to a personal fork of the shared punctalyze pipeline. This structure allows users to develop and track bespoke analysis workflows while contributing reusable improvements back to the shared pipeline.
 
@@ -25,21 +25,21 @@ The checklist below outlines the steps to initiate an experiment repository in a
 Please **check off** the tick boxes with an 'x' as you go. This repository assumes elementary knowledge of python and git.
 
 ### If you have not already forked the punctalyze repository:
-- [ ] fork the core pipeline if you have not already
+- [x ] fork the core pipeline if you have not already
         visit the [punctalyze](https://github.com/ocarmo/punctalyze) and click **"Fork"**
         this gives you a personal copy at `https://github.com/YOUR_USERNAME/punctalyze`
-- [ ] clone your fork locally by clicking **"<>Code"** at the top right of the GitHub page, then **"Open with GitHub Desktop"**
-- [ ] select your local path and open the repo by clicking the **"open in VS Code"** option
-- [ ] continue to the checklist below
+- [ x] clone your fork locally by clicking **"<>Code"** at the top right of the GitHub page, then **"Open with GitHub Desktop"**
+- [x ] select your local path and open the repo by clicking the **"open in VS Code"** option
+- [ x] continue to the checklist below
 
 ### If you already forked punctalyze: make your own image analysis repo
-- [ ] click the **"Use this template"** button at the top right of this template repository
-- [ ] name your project and click **"Create repository from template"**
-- [ ] clone onto your local device
-- [ ] open this repository (which you just cloned) in VS Code or your editor of choice
-- [ ] uncomment raw_data folders in gitignore 
-- [ ] delete placeholder files raw_data folders
-- [ ] import the editable analysis submodule in vscode terminal
+- [x ] click the **"Use this template"** button at the top right of this template repository
+- [x ] name your project and click **"Create repository from template"**
+- [x ] clone onto your local device
+- [x ] open this repository (which you just cloned) in VS Code or your editor of choice
+- [ x] uncomment raw_data folders in gitignore 
+- [ x] delete placeholder files raw_data folders
+- [ x] import the editable analysis submodule in vscode terminal
 ~~~ 
 git submodule add https://github.com/YOUR_USERNAME/punctalyze.git punctalyze 
 ~~~
